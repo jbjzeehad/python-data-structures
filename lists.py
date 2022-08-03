@@ -33,4 +33,24 @@ print(z)        #o:[2,4,6,8]
 print(min(z))   #o:2
 print(max(z))   #o:8
 
+cubes=[i**3 for i in range(5)]          #list comprehensions
+print(cubes)                #o:[0,1,8,27,64]
+
+evens=[i**2 for i in range(10) if i**2 % 2 ==0]
+print(evens)                #o:[0, 4, 16, 36, 64]
+
+
+'''Problem : Given a sentence as input, calculate and output the average word length of that sentence.To calculate the average word length, you need to divide the sum of all word lengths by the number of words in the sentence'''
+
+text = input()
+word_list=text.split()
+word_cnt=len(word_list)
+
+letter_cnt=0
+for w in word_list:
+    letter_cnt=letter_cnt+len(w)
+
+average=letter_cnt/word_cnt
+print(average)         
+
 #part 02
