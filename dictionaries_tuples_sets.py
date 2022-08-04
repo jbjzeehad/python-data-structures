@@ -57,4 +57,19 @@ print(z)        #o : 9
 num_sets={1,2,3,4,5}
 print(3 in num_sets)    #o : True
 
+nums_set ={1,2,1,3,1,4,5,6}
+print(nums_set)
+nums_set.add(-7)        #o : {1,2,3,4,5,6}
+nums_set.remove(3)      #o : {1,2,4,5,6,-7}
+print(nums_set)         #duplicate elements auto. get removed from set
+
+first={1,2,3,4,5,6}
+second={4,5,6,7,8,9}
+print(first | second)       #o :{1,2,3,4,5,6,7,8,9}
+print(first & second)       #o :{4,5,6}
+print(first - second)       #o :{1,2,3}
+print(second - first)       #o :{8,9,7}
+print(first ^ second)       #o :{1,2,3,7,8,9}
+
+
 #part 03
