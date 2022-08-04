@@ -41,7 +41,20 @@ dict={
 }
 print(dict[("Bob",24)])    #o: green
 
+numbers=(1,2,3)     #tuple unpacking
+a,b,c=numbers
+print(a)        #o : 1
+print(b)        #o : 2
+print(c)        #o : 3
 
+w,x,*y,z=[1,2,3,4,5,6,7,8,9]
+print(w)        #o : 1
+print(x)        #o : 2
+print(y)        #o : [3,4,5,6,7,8]
+print(z)        #o : 9
 
+#sets
+num_sets={1,2,3,4,5}
+print(3 in num_sets)    #o : True
 
 #part 03
